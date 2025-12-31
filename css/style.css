@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+nav {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    background: white;
+    margin: 20px;
+    padding: 40px;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Contact Links as Buttons */
+section a {
+    display: inline-block;
+    background-color: #003366; /* Dark blue button */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 5px 5px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+section a:hover {
+    background-color: #0055a5; /* Lighter blue on hover */
+}
+
+section a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    header {
+        padding: 20px;
+    }
+}
+
+
