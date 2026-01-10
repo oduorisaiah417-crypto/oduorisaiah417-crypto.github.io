@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* NAVIGATION */
+nav {
+    background: #1e293b;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* MAIN SECTION */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+h2 {
+    margin: 30px 0 15px;
+    color: #0f172a;
+}
+
+/* SKILLS */
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 5px solid #38bdf8;
+}
+
+/* PROJECTS */
+.project {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.project img,
+.project video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* MINI PROJECT */
+.container {
+    margin-top: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.btn {
+    background: #38bdf8;
+    border: none;
+    padding: 10px 20px;
+    color: #0f172a;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+}
+
+/* FOOTER */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 8px 0;
+    }
+}
+.projects-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.project-card img,
+.project-card video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin: 15px 0 10px;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.project-links {
+    margin-top: 15px;
+}
+
+.project-links a {
+    text-decoration: none;
+    margin: 0 8px;
+    padding: 8px 14px;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.85rem;
+}
+
+.project-links a:hover {
+    background: #0056b3;
+}
+.tags {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 8px;
+}
+.cv-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.cv-btn:hover {
+    background: #1e7e34;
+}
+section p i {
+    margin-right: 8px;
+    color: #007bff;
+    font-size: 1.1rem;
+}
+
+section p a {
+    text-decoration: none;
+}
+
+section p a:hover {
+    text-decoration: underline;
+}
+form {
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+nav a {
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+nav {
+    background: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+
+
