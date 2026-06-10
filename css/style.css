@@ -1,0 +1,295 @@
+/* =========================
+   GENERAL STYLING
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+    background:linear-gradient(135deg,#0a1931,#007bff);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.logo-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+}
+
+.header h1{
+    font-size:2.2rem;
+}
+
+.header p{
+    font-size:1rem;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+    background:#0a1931;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00c3ff;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+section h2{
+    text-align:center;
+    color:#0a1931;
+    margin-bottom:20px;
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:20px auto;
+    border:4px solid #007bff;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+    display:inline-block;
+    background:#007bff;
+    color:white;
+    padding:12px 25px;
+    margin:10px 5px;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0056b3;
+}
+
+.outline{
+    background:white;
+    color:#007bff;
+    border:2px solid #007bff;
+}
+
+.outline:hover{
+    background:#007bff;
+    color:white;
+}
+
+/* =========================
+   SKILLS BARS
+========================= */
+
+.bar{
+    width:100%;
+    background:#ddd;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+.bar span{
+    display:block;
+    height:15px;
+    background:#007bff;
+    border-radius:20px;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card img,
+.project-card video{
+    width:100%;
+}
+
+.project-card h3{
+    padding:15px;
+}
+
+.project-card p{
+    padding:0 15px 15px;
+}
+
+.tags{
+    color:#007bff;
+    font-weight:bold;
+}
+
+.project-links{
+    padding:15px;
+}
+
+.project-links a{
+    text-decoration:none;
+    background:#007bff;
+    color:white;
+    padding:8px 15px;
+    border-radius:6px;
+    margin-right:10px;
+}
+
+.project-links a:hover{
+    background:#0056b3;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+form{
+    max-width:600px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+textarea{
+    height:140px;
+}
+
+button{
+    background:#007bff;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social-links{
+    text-align:center;
+    margin-top:20px;
+}
+
+.social-links a{
+    color:#007bff;
+    font-size:28px;
+    margin:0 10px;
+}
+
+.social-links a:hover{
+    color:#0056b3;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#0a1931;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .logo-container{
+        flex-direction:column;
+    }
+
+    .header h1{
+        font-size:1.8rem;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+}
